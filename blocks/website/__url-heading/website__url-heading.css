@@ -5,4 +5,7 @@
   letter-spacing: 2px;
   font-weight: 400;
   margin: 0;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 12px;
 }

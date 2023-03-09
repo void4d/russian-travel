@@ -5,13 +5,12 @@
   font-weight: 400;
   line-height: 30px;
   align-self: end;
+  height: 46px;
 }
-
-
 
 @media screen and (max-width: 767px) {
   .website {
-    padding-left: 16px;
-    padding-right: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }

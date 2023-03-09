@@ -1,13 +1,12 @@
 .place {
   display: grid;
-  grid-template-columns: min-content minmax(min-content, max-content);
-  grid-template-rows: min-content minmax(min-content, max-content);
+  grid-template-columns: minmax(min-content, 1fr) minmax(min-content, max-content);
+  grid-template-rows: max-content minmax(min-content, max-content);
   grid-template-areas:
     "title website"
     "image paragraph";
   column-gap: 40px;
   row-gap: 48px;
-  padding-bottom: 80px;
 }
 
 .place:last-child {
@@ -17,12 +16,13 @@
 @media screen and (max-width: 1079px) {
   .place {
     column-gap: 32px;
+
   }
 }
 
 @media screen and (max-width: 1023px) {
   .place {
-    padding-bottom: 73px;
+    margin: 0;
     column-gap: 28px;
   }
 }
@@ -36,7 +36,6 @@
     "website"
     "image"
     "paragraph";
-    padding-bottom: 50px;
     column-gap: 0;
     row-gap: 32px;
   }
